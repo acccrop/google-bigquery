@@ -5,7 +5,7 @@ from checkov.common.models.enums import CheckResult, CheckCategories
 import logging
 import json
 
-class CKV_AWS_999(BaseResourceCheck):
+class CKV_GCP_999(BaseResourceCheck):
     def __init__(self):
         self.logger = logging.getLogger("{}".format(self.__module__))
         name = "Ensure That bigquery define the access parameter"
