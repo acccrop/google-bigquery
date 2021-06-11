@@ -17,8 +17,8 @@ class CKV_GCP_999(BaseResourceCheck):
 
     def scan_resource_conf(self, conf):
         self.logger.debug("ssss" + json.dumps(conf))
-        if 'access' in conf.keys():
-            if len(conf['access']) > 0:
+        if 'role' in conf.keys():
+            if len(conf['role']) > 0:
                 return CheckResult.PASSED     
         return CheckResult.FAILED
 
