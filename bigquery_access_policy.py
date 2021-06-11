@@ -10,7 +10,7 @@ class CKV_GCP_999(BaseResourceCheck):
         self.logger = logging.getLogger("{}".format(self.__module__))
         name = "Ensure That bigquery define the access parameter"
         id = "CKV_GCP_999"
-        supported_resources = '*'
+        supported_resources = ['google_bigquery_dataset_access']
         # CheckCategories are defined in models/enums.py
         categories = [CheckCategories.GENERAL_SECURITY]
         super().__init__(name=name, id=id, categories=categories, supported_resources=supported_resources)
